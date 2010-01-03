@@ -23,6 +23,7 @@ h2 {
 }
 h3 {
 	font:2em "Trebuchet MS", Verdana, sans-serif;
+	text-shadow:1px 1px 1px gray;
 	margin:1em 0 .5em;
 }
 
@@ -38,7 +39,7 @@ h3 {
 			-webkit-box-shadow:2px 2px 15px gray; -moz-box-shadow:2px 2px 15px gray;
 		}
 	.vcard .fn {
-		font-variant:small-caps; font-size:1.1em;
+		font-variant:small-caps; font-size:1.15em;
 		margin:bottom:.5em;
 	}
 	.vcard dd { padding-left:1em }
@@ -47,22 +48,28 @@ h3 {
 
 h2 + dl dt {
 	padding-bottom:.3em;
-	font-variant:small-caps; font-size:1.1em;
+	font-variant:small-caps; font-size:1.15em;
 }
 h2 + dl dd { padding-left:1em }
-h2 + dl dd + dd { 
+h2 + dl :first-child + dd + dd { 
 	border-bottom:1px dotted gray;
 	margin-bottom:1em;
 	padding-bottom:1em;
 }
 	h2 + dl dd ol { display:inline }
 
-.hcitation > ol { list-style-position: outside }
+.hcitation > ol {
+	list-style-position:outside;
+	font:italic 2em Georgia, "Times New Roman", serif; /* playing with numbers */
+}
+	.hcitation > ol > li > * { font:.5em verdana, arial, sans-serif } /* reseting number play effect */
 	.hcitation > ol > li {
-		padding:1em;
+		padding:.3em .6em .8em;
 		border-bottom:1px dotted gray;
 	}
+	.hcitation > ol > li:last-child { border-bottom:0 none }
 		.hcitation > ol > li ol, dd ol { list-style:none }
 			.hcitation > ol > li ol li, dd ol li { display:inline }
+	.hcitation > ol ol ~ div { padding:.1em 0; }
 
-.author em { font-style:normal; font-variant:small-caps }
+.author em { font-style:normal; font-variant:small-caps; font-size:1.05em }
