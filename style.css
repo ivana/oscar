@@ -7,43 +7,48 @@ body {
 	width:80em;
 	margin:0 auto;
 	background:whitesmoke;
+	color:#222;
 }
 	body > * { font-size:1.2em }
 ol, ul { list-style-position: inside }
-	
+
+a:link { color:#DA2A00 }
+a:hover { border-bottom:1px solid #DA2A00 }
+a:visited { color:#A71F00 }
+
 h1 {
 	font:4em Georgia, "Times New Roman", serif;
-	text-shadow:2px 2px 2px gray;
-	margin:.5em 0 .8em;
+	margin:.5em -0.1em .8em;
+	padding:0.3em 0.85em;
+	border:solid #CC2600; border-width:0 0 2px 1px;
+	-moz-box-shadow:1px 0 5px dimgray; -webkit-box-shadow:1px 0 5px dimgray; box-shadow:1px 0 5px dimgray;
 }
 h2 {
 	font:3em "Trebuchet MS", Verdana, sans-serif;
-	text-shadow:1px 1px 1px gray;
 	margin:1em 0 .5em;
+	border-bottom:1px solid #DA2A00;
 }
 h3 {
 	font:2em "Trebuchet MS", Verdana, sans-serif;
-	text-shadow:1px 1px 1px gray;
 	margin:1em 0 .5em;
 }
+h1, h2, h3 { text-shadow:1px 1px 1px gray }
 
-.vcard { line-height:1.7em }
+.vcard { line-height:1.7em; padding-left:6.5em }
 	.vcard img {
 		border:5px solid white;
-		-webkit-box-shadow:2px 2px 10px gray; -moz-box-shadow:2px 2px 10px gray;
-		-webkit-transform: rotate(8deg); -moz-transform: rotate(8deg);
+		-webkit-box-shadow:2px 2px 10px gray; -moz-box-shadow:2px 2px 10px gray; box-shadow:2px 2px 10px gray;
+		-webkit-transform:rotate(8deg); -moz-transform:rotate(8deg); transform:rotate(8deg);
 		float:right;
-		margin-right:10%;
+		margin-right:14%;
 	}
 		.vcard img:hover {
-			-webkit-box-shadow:2px 2px 15px gray; -moz-box-shadow:2px 2px 15px gray;
+			-webkit-box-shadow:2px 2px 15px gray; -moz-box-shadow:2px 2px 15px gray; box-shadow:2px 2px 15px gray;
 		}
 	.vcard .fn {
 		font-variant:small-caps; font-size:1.15em;
 		margin:bottom:.5em;
 	}
-	.vcard dd { padding-left:1em }
-		.vcard dt:first-child + dd { padding-left:0 }
 	.vcard .adr ~ dt { float:left; width:6.5em }
 
 h2 + dl dt {
@@ -73,3 +78,5 @@ h2 + dl :first-child + dd + dd {
 	.hcitation > ol ol ~ div { padding:.1em 0; }
 
 .author em { font-style:normal; font-variant:small-caps; font-size:1.05em }
+.article { color:#DA2A00 }
+.organization-unit + span { display:none }
