@@ -47,7 +47,7 @@ h1, h2, h3 { text-shadow:1px 1px 1px gray }
 		}
 	.vcard .fn {
 		font-variant:small-caps; font-size:1.15em;
-		margin:bottom:.5em;
+		margin-bottom:.5em;
 	}
 	.vcard .adr ~ dt { float:left; width:6.5em }
 
